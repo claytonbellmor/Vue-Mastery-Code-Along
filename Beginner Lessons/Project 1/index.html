@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  body {
+    font-family: tahoma;
+    color:#282828;
+    margin: 0px;
+  }
+  
+  .nav-bar {
+    background: linear-gradient(-90deg, #84CF6A, #16C0B0);
+    height: 60px;
+    margin-bottom: 15px;
+  }
+
+  .product {
+    display: flex;
+    flex-flow: wrap;
+    padding: 1rem;
+  }
+
+  img {
+    border: 1px solid #d8d8d8;
+    width: 70%;
+    margin: 40px;
+    box-shadow: 0px .5px 1px #d8d8d8;
+  }
+  
+  .product-image {
+    width: 80%;
+  }
+  
+  .product-image,
+  .product-info {
+    margin-top: 10px;
+    width: 50%;
+  }
+  
+  .color-box {
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+  }
+  
+  .cart {
+    margin-right: 25px;
+    float: right;
+    border: 1px solid #d8d8d8;
+    padding: 5px 20px;
+  }
+  
+  button {
+    margin-top: 30px;
+    border: none;
+    background-color: #1E95EA;
+    color: white;
+    height: 40px;
+    width: 100px;
+    font-size: 14px;
+  } 
+  
+  .disabledButton {
+    background-color: #d8d8d8;
+  }
+
+  .lineThrough {
+    text-decoration: line-through;
+  }
+  
+  .review-form {
+    width: 400px;
+    padding: 20px;
+    margin: 40px;
+    border: 1px solid #d8d8d8;
+  }
+  
+  input {
+    width: 100%;  
+    height: 25px;
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 60px;
+  }
+
+  .tab {
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .activeTab {
+    color: #16C0B0;
+    text-decoration: underline;
+  }
+  </style>
+</head>
+<body>
+  
+  <div class="nav-bar"></div>
+
+  <div id="app">
+    <div class="product">
+
+      <div class="product-image">
+        <a :href="sockLink">
+          <img :src="image" :alt="altText">
+        </a>
+      </div>
+
+      <div class="product-info">
+        <h1>{{ title }}</h1>
+        <p v-if="variants[selectedVariant].variantQuant > 100">In Stock</p>
+        <p v-else-if="variants[selectedVariant].variantQuant <= 100 && variants[selectedVariant].variantQuant > 0">Only {{ variants[selectedVariant].variantQuant }} Pairs Remaining</p>
+        <p v-else :class="{lineThrough: variants[selectedVariant].variantQuant <= 0 || !inStock}">Out of Stock</p>
+        <ul>
+          <li v-for="detail in details">{{ detail }}</li>
+        </ul>
+
+        <div  
+          v-for="(variant, index) in variants" 
+          :key="variant.variantId"
+          class="color-box"
+          :style="{ backgroundColor: variant.variantColor }"      
+          @mouseover="updateProduct(index)" >
+
+          <ul>
+            <!-- <li>{{ variant.size.join(', ') }}</li> -->
+          </ul>
+
+        </div>
+
+        <button 
+          @click="addToCart" 
+          :disabled="!inStock"
+          :class="{disabledButton: !inStock}">
+          Add to Cart</button>
+        <button @click="removeFromCart">Remove from Cart</button>
+
+        <div class="cart">
+          <p>Cart ({{ cart }})</p>
+        </div>
+
+
+      </div>
+
+
+    </div>
+  </div>
+  
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+var app = new Vue ({
+  el: '#app',
+  data: {
+    product: 'Socks',
+    sockLink: '#',
+    selectedVariant: 0,
+    altText: "100% Wool",
+    brand: "Vue Mastery Socks",
+    details: ["80% Cotton", "20 Polyester", "Gender Neutral"],
+    variants: [
+      {
+        variantId: 2234,
+        variantColor: "green",
+        size: ["small", "medium", "large"],
+        variantImage: 'vmSocks-green-onWhite.jpg',
+        variantQuant: 87,
+        onSale: 'On Sale!'
+      },
+      {
+        variantId: 2235,
+        variantColor: "blue",
+        size: ["XS", "small", "medium", "large", "XXL", "XXXL"],
+        variantImage: 'vmSocks-blue-onWhite.jpg',
+        variantQuant: 0,
+        onSale: ''
+      }
+    ],
+    cart: 0
+  },
+  methods: {
+    addToCart() {
+      this.cart += 1
+    },
+    removeFromCart() {
+      if (this.cart <= 0) return
+      this.cart -= 1
+    },
+    updateProduct(index) {
+      this.selectedVariant = index
+      console.log(index);
+      
+    }
+  },
+  computed: {
+    title() {
+      return this.brand + ' ' + this.product + ' ' + this.variants[this.selectedVariant].onSale
+    },
+    image() {
+      return this.variants[this.selectedVariant].variantImage
+    },
+    inStock() {
+      return this.variants[this.selectedVariant].variantQuant
+    }
+  }
+})
+
+</script>
+</body>
+</html>
