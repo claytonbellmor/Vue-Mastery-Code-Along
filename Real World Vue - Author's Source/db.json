@@ -1,0 +1,364 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Beach Cleanup",
+      "date": "Aug 28 2018",
+      "time": "10:00",
+      "location": "Daytona Beach",
+      "description": "Let's clean up this beach.",
+      "organizer": "Adam Jahr",
+      "category": "sustainability",
+      "attendees": [
+        {
+          "id": "abc123",
+          "name": "Adam Jahr"
+        },
+        {
+          "id": "def456",
+          "name": "Gregg Pollack"
+        },
+        {
+          "id": "ghi789",
+          "name": "Beth Swanson"
+        },
+        {
+          "id": "jkl101",
+          "name": "Mary Gordon"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Park Cleanup",
+      "date": "Nov 12 2018",
+      "time": "12:00",
+      "location": "132 N Magnolia Street, Orlando, Florida",
+      "description": "We're going to clean up this park.",
+      "organizer": "Adam Jahr",
+      "category": "nature",
+      "attendees": [
+        {
+          "id": "ghi789",
+          "name": "Beth Swanson"
+        },
+        {
+          "id": "jkl101",
+          "name": "Mary Gordon"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Pet Adoption Day",
+      "date": "Dec 2 2018",
+      "time": "12:00",
+      "location": "132 N Magnolia Street, Orlando, Florida",
+      "description": "Help animals find new homes.",
+      "organizer": "Gregg Pollack",
+      "category": "animal welfare",
+      "attendees": [
+        {
+          "id": "abc123",
+          "name": "Adam Jahr"
+        },
+        {
+          "id": "ghi789",
+          "name": "Beth Swanson"
+        },
+        {
+          "id": "jkl101",
+          "name": "Mary Gordon"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "user": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "category": "sustainability",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "Office Party",
+      "description": "Free food and pizza and beer ",
+      "location": "Athens, GA",
+      "date": "2020-07-02T19:55:00.000Z",
+      "time": "9:00",
+      "attendees": []
+    },
+    {
+      "id": 5,
+      "user": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "category": "sustainability",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "Laundry Day",
+      "description": "Free food and pizza and beer ",
+      "location": "Athens, GA",
+      "date": "2020-07-02T19:55:00.000Z",
+      "time": "9:00",
+      "attendees": []
+    },
+    {
+      "id": 6,
+      "user": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "category": "sustainability",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "Auto Mechanic Tools",
+      "description": "Free food and pizza and beer ",
+      "location": "Athens, GA",
+      "date": "2020-07-02T19:55:00.000Z",
+      "time": "9:00",
+      "attendees": []
+    },
+    {
+      "id": 7,
+      "user": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "category": "sustainability",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "Beaches and Whales Viewing Party",
+      "description": "Free food and pizza and beer ",
+      "location": "Athens, GA",
+      "date": "2020-07-02T19:55:00.000Z",
+      "time": "9:00",
+      "attendees": []
+    },
+    {
+      "id": 8,
+      "user": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "category": "sustainability",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "Cooking and Meal Preping",
+      "description": "Free food and pizza and beer ",
+      "location": "Athens, GA",
+      "date": "2020-07-02T19:55:00.000Z",
+      "time": "9:00",
+      "attendees": []
+    },
+    {
+      "id": 4808685,
+      "user": {
+        "id": "abc123",
+        "name": "Clay"
+      },
+      "category": "",
+      "organizer": {
+        "id": "abc123",
+        "name": "Clay"
+      },
+      "title": "",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
+    },
+    {
+      "id": 8927592,
+      "user": {
+        "id": "abc123",
+        "name": "Clay"
+      },
+      "category": "",
+      "organizer": {
+        "id": "abc123",
+        "name": "Clay"
+      },
+      "title": "",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
+    },
+    {
+      "id": 5185809,
+      "user": {
+        "id": "abc123",
+        "name": "Clay"
+      },
+      "category": "",
+      "organizer": {
+        "id": "abc123",
+        "name": "Clay"
+      },
+      "title": "pizza",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
+    },
+    {
+      "id": 7204351,
+      "user": {
+        "id": "abc123",
+        "name": "Clay"
+      },
+      "category": "",
+      "organizer": {
+        "id": "abc123",
+        "name": "Clay"
+      },
+      "title": "",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
+    },
+    {
+      "id": 8530912,
+      "user": {
+        "id": "abc123",
+        "name": "Clay"
+      },
+      "category": "",
+      "organizer": {
+        "id": "abc123",
+        "name": "Clay"
+      },
+      "title": "fefwf",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
+    },
+    {
+      "id": 1153233,
+      "user": {
+        "id": "abc123",
+        "name": "Clay"
+      },
+      "category": "",
+      "organizer": {
+        "id": "abc123",
+        "name": "Clay"
+      },
+      "title": "",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
+    },
+    {
+      "id": 6730983,
+      "user": {
+        "id": "abc123",
+        "name": "Clay"
+      },
+      "category": "",
+      "organizer": {
+        "id": "abc123",
+        "name": "Clay"
+      },
+      "title": "SUCCESS",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
+    },
+    {
+      "id": 7193267,
+      "user": {
+        "id": "abc123",
+        "name": "Clay"
+      },
+      "category": "",
+      "organizer": {
+        "id": "abc123",
+        "name": "Clay"
+      },
+      "title": "",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
+    },
+    {
+      "id": 7715312,
+      "user": {
+        "id": "abc123",
+        "name": "Clay"
+      },
+      "category": "",
+      "organizer": {
+        "id": "abc123",
+        "name": "Clay"
+      },
+      "title": "",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
+    },
+    {
+      "id": 9668944,
+      "user": {
+        "id": "abc123",
+        "name": "Clay"
+      },
+      "category": "",
+      "organizer": {
+        "id": "abc123",
+        "name": "Clay"
+      },
+      "title": "",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
+    },
+    {
+      "id": 9809887,
+      "user": {
+        "id": "abc123",
+        "name": "Clay"
+      },
+      "category": "",
+      "organizer": {
+        "id": "abc123",
+        "name": "Clay"
+      },
+      "title": "",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
+    }
+  ]
+}
