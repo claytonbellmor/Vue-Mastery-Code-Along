@@ -1,5 +1,4 @@
 import axios from 'axios'
-import nprogress from 'nprogress'
 import nProgress from 'nprogress'
 
 // Single Axios Instance for App
