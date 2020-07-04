@@ -231,6 +231,42 @@
       "date": "",
       "time": "5:00",
       "attendees": []
+    },
+    {
+      "id": 5430332,
+      "user": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "category": "nature",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "title": "Puppy Party",
+      "description": "fwfwef",
+      "location": "fwf",
+      "date": "2020-07-01T04:43:00.000Z",
+      "time": "15:00",
+      "attendees": []
+    },
+    {
+      "id": 6005227,
+      "user": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "category": "",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "title": "fwfw",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
     }
   ]
 }
