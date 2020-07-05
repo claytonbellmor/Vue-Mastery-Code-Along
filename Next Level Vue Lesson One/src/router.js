@@ -4,7 +4,6 @@ import EventCreate from './views/EventCreate.vue'
 import EventList from './views/EventList.vue'
 import EventShow from './views/EventShow.vue'
 import NotFound from './views/NotFound.vue'
-import NetworkIssue from './views/NetworkIssue.vue'
 import NProgress from 'nprogress'
 import store from '@/store/store'
 
@@ -36,16 +35,7 @@ const router = new Router({
             routeTo.params.event = event
             next()
           })
-          .catch(error => {
-            if (error.response && error.response.status == 404) {
-              next({
-                name: '404',
-                params: { resource: 'event' }
-              })
-            } else {
-              next({ name: 'network-issue' })
-            }
-          })
+          .catch(() => next({ name: '404', params: { resource: 'event' } }))
       }
     },
     {
@@ -53,11 +43,6 @@ const router = new Router({
       name: '404',
       component: NotFound,
       props: true
-    },
-    {
-      path: '/network-issue',
-      name: 'network-issue',
-      component: NetworkIssue
     },
     {
       path: '*',
@@ -69,9 +54,10 @@ const router = new Router({
 router.beforeEach((routeTo, routeFrom, next) => {
   NProgress.start()
   next()
-}),
-  router.afterEach(() => {
-    NProgress.done()
-  })
+})
+
+router.afterEach(() => {
+  NProgress.done()
+})
 
 export default router
