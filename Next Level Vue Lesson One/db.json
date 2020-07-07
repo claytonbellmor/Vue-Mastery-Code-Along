@@ -121,7 +121,7 @@
       ]
     },
     {
-      "id": 12,
+      "id": 6,
       "title": "Orlando Dev Meetup",
       "date": "Dec 2 2018",
       "time": "12:00",
@@ -217,7 +217,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 10,
       "category": "animal welfare",
       "organizer": {
         "user": {
@@ -228,12 +228,12 @@
       "title": "Gregg's Event",
       "description": "We'll do stuff",
       "location": "Your House",
-      "date": "",
+      "date": "2020-07-02T18:32:00.000Z",
       "time": "5:00",
       "attendees": []
     },
     {
-      "id": 5430332,
+      "id": 1035325,
       "user": {
         "id": "abc123",
         "name": "Adam"
@@ -243,33 +243,11 @@
         "id": "abc123",
         "name": "Adam"
       },
-      "title": "Puppy Party",
-      "description": "fwfwef",
-      "location": "fwf",
-      "date": "2020-07-01T04:43:00.000Z",
-      "time": "15:00",
-      "attendees": []
-    },
-    {
-      "id": 8169645,
-      "user": {
-        "id": "abc123",
-        "name": "Adam"
-      },
-      "category": {
-        "isTrusted": true
-      },
-      "organizer": {
-        "id": "abc123",
-        "name": "Adam"
-      },
-      "title": "wfwf",
-      "description": "fwfe",
-      "location": "wfwef",
-      "date": "2020-07-05T17:27:00.000Z",
-      "time": {
-        "isTrusted": true
-      },
+      "title": "Hiking Dinosaurs",
+      "description": "Transpiring time and sense",
+      "location": "Pangea",
+      "date": "2020-07-02T18:52:00.000Z",
+      "time": "13:00",
       "attendees": []
     }
   ]
