@@ -249,6 +249,28 @@
       "date": "2020-07-01T04:43:00.000Z",
       "time": "15:00",
       "attendees": []
+    },
+    {
+      "id": 8169645,
+      "user": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "category": {
+        "isTrusted": true
+      },
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "title": "wfwf",
+      "description": "fwfe",
+      "location": "wfwef",
+      "date": "2020-07-05T17:27:00.000Z",
+      "time": {
+        "isTrusted": true
+      },
+      "attendees": []
     }
   ]
 }

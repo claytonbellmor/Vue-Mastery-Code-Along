@@ -77,7 +77,7 @@
           v-model="event.date"
           placeholder="Select a date"
           :wrapper-class="{ error: $v.event.date.$error}"
-          clear-button="true"
+          :clear-button="true"
           @opened="$v.event.date.$touch()"
         />
       </div>
