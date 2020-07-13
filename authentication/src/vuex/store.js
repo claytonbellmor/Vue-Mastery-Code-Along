@@ -22,23 +22,21 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    REGISTER ({ commit }, credentials) {
+    register ({ commit }, credentials) {
       return axios
         .post('//localhost:3000/register', credentials)
         .then(({ data }) => {
           commit('SET_USER_DATA', data)
-        }
-        )
+        })
     },
-    LOGIN ({ commit }, credentials) {
+    login ({ commit }, credentials) {
       return axios
         .post('//localhost:3000/login', credentials)
         .then(({ data }) => {
           commit('SET_USER_DATA', data)
-        }
-        )
+        })
     },
-    LOGOUT ({ commit }) {
+    logout ({ commit }) {
       commit('CLEAR_USER_DATA')
     }
   },

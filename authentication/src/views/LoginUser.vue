@@ -31,10 +31,11 @@ export default {
   },
   methods: {
     login () {
-      this.$store.dispatch('LOGIN', {
-        email: this.email,
-        password: this.password
-      })
+      this.$store
+        .dispatch('login', {
+          email: this.email,
+          password: this.password
+        })
         .then(() => {
           this.$router.push({ name: 'dashboard' })
         })
@@ -43,6 +44,5 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
 </style>

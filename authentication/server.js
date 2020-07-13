@@ -17,13 +17,10 @@ app.get('/', (req, res) => {
 })
 
 app.get('/dashboard', verifyToken, (req, res) => {
-  // Verify we have the token
   jwt.verify(req.token, 'the_secret_key', err => {
-    // If we dont: respond with 401
     if (err) {
       res.sendStatus(401)
     } else {
-      // otherwise respond with private events
       res.json({
         events: events
       })

@@ -9,17 +9,16 @@
       <label for="email">
         Email:
       </label>
-      <input v-model="email" type="text" name="email" value>
+      <input v-model="email" type="email" name="email" value>
 
       <label for="password">
         Password:
       </label>
-      <input v-model="password" type="text" name="password" value>
+      <input v-model="password" type="password" name="password" value>
 
       <button type="submit" name="button">
         Register
       </button>
-
       <router-link to="/login">
         Already have an account? Login.
       </router-link>
@@ -38,20 +37,19 @@ export default {
   },
   methods: {
     register () {
-      this.$store.dispatch('REGISTER', {
-        name: this.name,
-        email: this.email,
-        password: this.password
-      })
+      this.$store
+        .dispatch('register', {
+          name: this.name,
+          email: this.email,
+          password: this.password
+        })
         .then(() => {
           this.$router.push({ name: 'dashboard' })
         })
     }
   }
-
 }
 </script>
 
-<style>
-
+<style scoped>
 </style>
